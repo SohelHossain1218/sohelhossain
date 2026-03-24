@@ -17,7 +17,7 @@
         body {
             font-family: 'Inter', sans-serif;
             background-color: #05080f;
-            color: #FBF6F6;
+            color: #eef2ff;
             line-height: 1.5;
             scroll-behavior: smooth;
         }
@@ -45,7 +45,7 @@
             z-index: 1000;
             background: rgba(5, 10, 20, 0.92);
             backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(76, 140, 228, 0.3);
+            border-bottom: 1px solid rgba(76, 140, 228, 0.25);
             padding: 1rem 2rem;
         }
 
@@ -63,11 +63,11 @@
             font-weight: 800;
             font-size: 1.6rem;
             letter-spacing: -0.5px;
-            background: linear-gradient(135deg, #FBF6F6 0%, #4C8CE4 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #4C8CE4 100%);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            text-shadow: 0 0 8px rgba(76, 140, 228, 0.3);
+            text-shadow: 0 0 8px rgba(76,140,228,0.2);
         }
 
         .nav-links {
@@ -78,7 +78,7 @@
         }
 
         .nav-links a {
-            color: #FBF6F6;
+            color: #ccddf8;
             text-decoration: none;
             font-weight: 500;
             font-size: 0.95rem;
@@ -99,14 +99,14 @@
         }
 
         section {
-            border-bottom: 1px solid rgba(76, 140, 228, 0.15);
+            border-bottom: 1px solid rgba(76, 140, 228, 0.1);
         }
 
         h1 {
             font-size: 3.4rem;
             font-weight: 800;
             line-height: 1.2;
-            background: linear-gradient(to right, #FBF6F6, #a0c0ff);
+            background: linear-gradient(to right, #FBF6F6, #4C8CE4);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
@@ -118,7 +118,6 @@
             margin-bottom: 2rem;
             position: relative;
             display: inline-block;
-            color: #FBF6F6;
         }
         h2:after {
             content: '';
@@ -129,19 +128,18 @@
             height: 3px;
             background: #4C8CE4;
             border-radius: 3px;
-            box-shadow: 0 0 6px rgba(76, 140, 228, 0.5);
+            box-shadow: 0 0 6px #4C8CE4;
         }
 
         h3 {
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 0.75rem;
-            color: #FBF6F6;
         }
 
         .highlight {
             color: #4C8CE4;
-            text-shadow: 0 0 3px rgba(76, 140, 228, 0.5);
+            text-shadow: 0 0 3px rgba(76,140,228,0.5);
         }
 
         .btn-primary {
@@ -163,8 +161,8 @@
 
         .btn-primary:hover {
             background: #4C8CE4;
-            color: #05080f;
-            box-shadow: 0 0 14px rgba(76, 140, 228, 0.5);
+            color: #0a0f1f;
+            box-shadow: 0 0 14px rgba(76,140,228,0.5);
             transform: translateY(-2px);
         }
 
@@ -179,12 +177,12 @@
         .hero-tagline {
             font-size: 1.2rem;
             margin: 1.5rem 0 2rem;
-            color: #FBF6F6;
+            color: #b9c8ff;
             border-left: 3px solid #4C8CE4;
             padding-left: 1.2rem;
         }
 
-        /* About section with profile image */
+        /* ========= UPDATED ABOUT SECTION (with profile image) ========= */
         .about-wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -194,7 +192,7 @@
             background: rgba(10, 25, 45, 0.4);
             border-radius: 32px;
             padding: 2rem;
-            border-right: 2px solid rgba(76, 140, 228, 0.2);
+            border-right: 2px solid #4C8CE430;
         }
         .about-text {
             flex: 2;
@@ -203,7 +201,7 @@
         .about-text p {
             font-size: 1.05rem;
             line-height: 1.6;
-            color: #FBF6F6;
+            color: #cbd5ff;
             margin-bottom: 1rem;
         }
         .profile-image {
@@ -227,7 +225,7 @@
             box-shadow: 0 0 30px rgba(76, 140, 228, 0.5);
         }
 
-        /* Skills Grid */
+        /* Updated Skills Grid (7 items) */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -237,7 +235,7 @@
         .skill-card {
             background: rgba(15, 25, 45, 0.6);
             backdrop-filter: blur(4px);
-            border: 1px solid rgba(76, 140, 228, 0.3);
+            border: 1px solid rgba(76, 140, 228, 0.2);
             border-radius: 24px;
             padding: 1.2rem 0.8rem;
             text-align: center;
@@ -252,16 +250,15 @@
             font-size: 1rem;
             font-weight: 600;
             margin-bottom: 0;
-            color: #FBF6F6;
         }
         .skill-card:hover {
             transform: translateY(-5px);
             border-color: #4C8CE4;
-            box-shadow: 0 10px 20px -8px rgba(76, 140, 228, 0.3);
+            box-shadow: 0 10px 20px -8px rgba(76,140,228,0.2);
             background: rgba(10, 30, 50, 0.7);
         }
 
-        /* Projects grid */
+        /* Projects grid (7 cards) */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -273,7 +270,7 @@
             border-radius: 28px;
             overflow: hidden;
             transition: all 0.3s ease;
-            border: 1px solid rgba(76, 140, 228, 0.3);
+            border: 1px solid rgba(76, 140, 228, 0.2);
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -304,13 +301,12 @@
             font-size: 1.2rem;
             margin-bottom: 0.6rem;
             font-weight: 700;
-            color: #FBF6F6;
+            color: #f0f4ff;
         }
         .project-info p {
-            color: #FBF6F6;
+            color: #b9c8ff;
             font-size: 0.9rem;
             line-height: 1.4;
-            opacity: 0.9;
         }
 
         /* startup section */
@@ -324,22 +320,18 @@
         .startup-card h3 {
             font-size: 2rem;
             margin-bottom: 0.5rem;
-            color: #FBF6F6;
         }
         .startup-badge {
             display: inline-block;
-            background: rgba(76, 140, 228, 0.15);
+            background: rgba(76,140,228,0.15);
             padding: 0.2rem 1rem;
             border-radius: 40px;
             font-size: 0.8rem;
             margin-bottom: 1.2rem;
             color: #4C8CE4;
         }
-        .startup-card p {
-            color: #FBF6F6;
-        }
 
-        /* contact section */
+        /* contact section (same as before but using modern grid) */
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -351,7 +343,7 @@
             border-radius: 28px;
             padding: 1.8rem 1.5rem;
             text-align: center;
-            border: 1px solid rgba(76, 140, 228, 0.3);
+            border: 1px solid rgba(76, 140, 228, 0.2);
             transition: all 0.3s ease;
         }
         .contact-card:hover {
@@ -367,11 +359,10 @@
         .contact-card h3 {
             font-size: 1.4rem;
             margin-bottom: 0.5rem;
-            color: #FBF6F6;
         }
         .contact-detail {
             font-size: 0.95rem;
-            color: #FBF6F6;
+            color: #b9c8ff;
             margin-bottom: 1.2rem;
             word-break: break-word;
         }
@@ -391,18 +382,17 @@
         }
         .contact-btn:hover {
             background: #4C8CE4;
-            color: #05080f;
-            box-shadow: 0 0 12px rgba(76, 140, 228, 0.5);
+            color: #0a0f1f;
+            box-shadow: 0 0 12px rgba(76,140,228,0.5);
             transform: scale(1.02);
         }
 
         footer {
             text-align: center;
             padding: 2rem;
-            border-top: 1px solid rgba(76, 140, 228, 0.2);
+            border-top: 1px solid rgba(76,140,228,0.2);
             font-size: 0.85rem;
-            color: #FBF6F6;
-            opacity: 0.8;
+            color: #7f8ea3;
         }
 
         /* responsive */
@@ -441,6 +431,9 @@
             }
             .startup-card {
                 padding: 1.5rem;
+            }
+            .project-card {
+                margin-bottom: 0;
             }
         }
 
@@ -486,7 +479,7 @@
         </div>
     </section>
 
-    <!-- About Section with profile image -->
+    <!-- ========= UPDATED ABOUT SECTION (with profile image) ========= -->
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
@@ -502,7 +495,7 @@
         </div>
     </section>
 
-    <!-- Skills Section (7 items) -->
+    <!-- ========= UPDATED SKILLS SECTION (7 specific skills) ========= -->
     <section id="skills">
         <div class="container">
             <h2>Core Competencies</h2>
@@ -518,11 +511,12 @@
         </div>
     </section>
 
-    <!-- Projects Section (7 professional cards) -->
+    <!-- ========= UPDATED PROJECTS SECTION (7 professional cards) ========= -->
     <section id="projects">
         <div class="container">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
+                <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-water-pump"></i></div>
                     <div class="project-info">
@@ -530,6 +524,7 @@
                         <p>Advanced pump control system with pressure regulation, flow monitoring, and fault detection for heavy-duty industrial environments.</p>
                     </div>
                 </div>
+                <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-satellite-dish"></i></div>
                     <div class="project-info">
@@ -537,6 +532,7 @@
                         <p>Real-time asset tracking with 4G connectivity, geofencing, and cloud-based dashboards for fleet management.</p>
                     </div>
                 </div>
+                <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-cloud-upload-alt"></i></div>
                     <div class="project-info">
@@ -544,6 +540,7 @@
                         <p>Modular IoT gateway with MQTT, OTA updates, and edge processing for seamless factory data integration.</p>
                     </div>
                 </div>
+                <!-- Project 4 -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-battery-full"></i></div>
                     <div class="project-info">
@@ -551,6 +548,7 @@
                         <p>BMS with cell balancing, overcurrent protection, and CAN bus interface for electric vehicle and energy storage.</p>
                     </div>
                 </div>
+                <!-- Project 5 -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-charging-station"></i></div>
                     <div class="project-info">
@@ -558,6 +556,7 @@
                         <p>Real-time power consumption tracking, predictive analytics, and remote control via web dashboard.</p>
                     </div>
                 </div>
+                <!-- Project 6 -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-tower-cell"></i></div>
                     <div class="project-info">
@@ -565,6 +564,7 @@
                         <p>Industrial tower light controller with Modbus communication, status visualization, and alarm management.</p>
                     </div>
                 </div>
+                <!-- Project 7 -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-microchip"></i></div>
                     <div class="project-info">
@@ -576,7 +576,7 @@
         </div>
     </section>
 
-    <!-- Startup Section: Voltacdc -->
+    <!-- Startup Section (unchanged) -->
     <section id="startup">
         <div class="container">
             <h2>My Venture — Voltacdc</h2>
@@ -594,7 +594,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section (preserved with all links) -->
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
@@ -652,7 +652,7 @@
             if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
                 const currentId = section.getAttribute("id");
                 navLinks.forEach(link => {
-                    link.style.color = "#FBF6F6";
+                    link.style.color = "#ccddf8";
                     link.style.borderBottomColor = "transparent";
                     if (link.getAttribute("href") === `#${currentId}`) {
                         link.style.color = "#4C8CE4";
