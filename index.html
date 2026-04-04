@@ -13,7 +13,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Inter', sans-serif;
             background-color: #05080f;
@@ -21,22 +20,10 @@
             line-height: 1.5;
             scroll-behavior: smooth;
         }
-
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0b1120;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #4C8CE4;
-            border-radius: 10px;
-        }
-
-        html {
-            scroll-padding-top: 85px;
-            scroll-behavior: smooth;
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0b1120; }
+        ::-webkit-scrollbar-thumb { background: #4C8CE4; border-radius: 10px; }
+        html { scroll-padding-top: 85px; scroll-behavior: smooth; }
 
         .navbar {
             position: sticky;
@@ -47,7 +34,6 @@
             border-bottom: 1px solid rgba(76, 140, 228, 0.3);
             padding: 1rem 2rem;
         }
-
         .nav-container {
             max-width: 1280px;
             margin: 0 auto;
@@ -57,7 +43,6 @@
             flex-wrap: wrap;
             gap: 1rem;
         }
-
         .logo {
             font-weight: 800;
             font-size: 1.6rem;
@@ -68,14 +53,12 @@
             color: transparent;
             text-shadow: 0 0 8px rgba(76, 140, 228, 0.3);
         }
-
         .nav-links {
             display: flex;
             gap: 2rem;
             flex-wrap: wrap;
             list-style: none;
         }
-
         .nav-links a {
             color: #FBF6F6;
             text-decoration: none;
@@ -85,22 +68,9 @@
             border-bottom: 2px solid transparent;
             padding-bottom: 4px;
         }
-
-        .nav-links a:hover {
-            color: #4C8CE4;
-            border-bottom-color: #4C8CE4;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        section {
-            border-bottom: 1px solid rgba(76, 140, 228, 0.15);
-        }
-
+        .nav-links a:hover { color: #4C8CE4; border-bottom-color: #4C8CE4; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+        section { border-bottom: 1px solid rgba(76, 140, 228, 0.15); }
         h1 {
             font-size: 3.4rem;
             font-weight: 800;
@@ -110,7 +80,6 @@
             -webkit-background-clip: text;
             color: transparent;
         }
-
         h2 {
             font-size: 2.2rem;
             font-weight: 700;
@@ -130,19 +99,8 @@
             border-radius: 3px;
             box-shadow: 0 0 6px rgba(76, 140, 228, 0.5);
         }
-
-        h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-            color: #FBF6F6;
-        }
-
-        .highlight {
-            color: #4C8CE4;
-            text-shadow: 0 0 3px rgba(76, 140, 228, 0.5);
-        }
-
+        h3 { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.75rem; color: #FBF6F6; }
+        .highlight { color: #4C8CE4; text-shadow: 0 0 3px rgba(76, 140, 228, 0.5); }
         .btn-primary {
             display: inline-flex;
             align-items: center;
@@ -155,34 +113,18 @@
             border-radius: 40px;
             font-size: 1rem;
             cursor: pointer;
-            transition: all 0.25s ease;
+            transition: 0.25s ease;
             text-decoration: none;
-            letter-spacing: 0.5px;
         }
-
-        .btn-primary:hover {
-            background: #4C8CE4;
-            color: #05080f;
-            box-shadow: 0 0 14px rgba(76, 140, 228, 0.5);
-            transform: translateY(-2px);
-        }
-
-        .hero {
-            min-height: 85vh;
-            display: flex;
-            align-items: center;
-        }
-        .hero-content {
-            max-width: 800px;
-        }
+        .btn-primary:hover { background: #4C8CE4; color: #05080f; box-shadow: 0 0 14px rgba(76, 140, 228, 0.5); transform: translateY(-2px); }
+        .hero { min-height: 85vh; display: flex; align-items: center; }
+        .hero-content { max-width: 800px; }
         .hero-tagline {
             font-size: 1.2rem;
             margin: 1.5rem 0 2rem;
-            color: #FBF6F6;
             border-left: 3px solid #4C8CE4;
             padding-left: 1.2rem;
         }
-
         .about-wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -194,37 +136,20 @@
             padding: 2rem;
             border-right: 2px solid rgba(76, 140, 228, 0.2);
         }
-        .about-text {
-            flex: 2;
-            min-width: 250px;
-        }
-        .about-text p {
-            font-size: 1.05rem;
-            line-height: 1.6;
-            color: #FBF6F6;
-            margin-bottom: 1rem;
-        }
-        .profile-image {
-            flex: 1;
-            min-width: 200px;
-            text-align: center;
-        }
+        .about-text { flex: 2; min-width: 250px; }
+        .about-text p { font-size: 1.05rem; line-height: 1.6; margin-bottom: 1rem; }
+        .profile-image { flex: 1; min-width: 200px; text-align: center; }
         .profile-image img {
             width: 100%;
             max-width: 260px;
-            height: auto;
-            aspect-ratio: 1 / 1;
+            aspect-ratio: 1/1;
             object-fit: cover;
             border-radius: 50%;
             border: 3px solid #4C8CE4;
-            box-shadow: 0 0 20px rgba(76, 140, 228, 0.3), 0 10px 25px rgba(0,0,0,0.5);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0 20px rgba(76, 140, 228, 0.3);
+            transition: 0.3s ease;
         }
-        .profile-image img:hover {
-            transform: scale(1.02);
-            box-shadow: 0 0 30px rgba(76, 140, 228, 0.5);
-        }
-
+        .profile-image img:hover { transform: scale(1.02); box-shadow: 0 0 30px rgba(76, 140, 228, 0.5); }
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -238,26 +163,11 @@
             border-radius: 24px;
             padding: 1.2rem 0.8rem;
             text-align: center;
-            transition: all 0.25s ease;
+            transition: 0.25s ease;
         }
-        .skill-card i {
-            font-size: 2rem;
-            color: #4C8CE4;
-            margin-bottom: 0.7rem;
-        }
-        .skill-card h4 {
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 0;
-            color: #FBF6F6;
-        }
-        .skill-card:hover {
-            transform: translateY(-5px);
-            border-color: #4C8CE4;
-            box-shadow: 0 10px 20px -8px rgba(76, 140, 228, 0.3);
-            background: rgba(10, 30, 50, 0.7);
-        }
-
+        .skill-card i { font-size: 2rem; color: #4C8CE4; margin-bottom: 0.7rem; }
+        .skill-card h4 { font-size: 1rem; font-weight: 600; }
+        .skill-card:hover { transform: translateY(-5px); border-color: #4C8CE4; background: rgba(10, 30, 50, 0.7); }
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -268,17 +178,13 @@
             background: #0f1725;
             border-radius: 28px;
             overflow: hidden;
-            transition: all 0.3s ease;
+            transition: 0.3s ease;
             border: 1px solid rgba(76, 140, 228, 0.3);
             height: 100%;
             display: flex;
             flex-direction: column;
         }
-        .project-card:hover {
-            transform: translateY(-6px);
-            border-color: #4C8CE4;
-            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.6);
-        }
+        .project-card:hover { transform: translateY(-6px); border-color: #4C8CE4; box-shadow: 0 20px 30px -12px rgba(0,0,0,0.6); }
         .project-img {
             height: 180px;
             background: #0a101c;
@@ -291,48 +197,15 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.3s ease;
+            transition: 0.3s ease;
         }
-        .project-img img:hover {
-            transform: scale(1.05);
-        }
-        .project-img i {
-            font-size: 3.5rem;
-            color: #4C8CE4;
-            opacity: 0.8;
-        }
-        .project-info {
-            padding: 1.5rem;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        .project-info h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.6rem;
-            font-weight: 700;
-            color: #FBF6F6;
-        }
-        .project-info p {
-            color: #FBF6F6;
-            font-size: 0.9rem;
-            line-height: 1.4;
-            opacity: 0.9;
-            margin-bottom: 1rem;
-        }
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1.2rem;
-        }
-        .tech-tags span {
-            background: rgba(76, 140, 228, 0.15);
-            border-radius: 20px;
-            padding: 0.2rem 0.8rem;
-            font-size: 0.7rem;
-            color: #4C8CE4;
-        }
+        .project-img img:hover { transform: scale(1.05); }
+        .project-img i { font-size: 3.5rem; color: #4C8CE4; opacity: 0.8; }
+        .project-info { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+        .project-info h3 { font-size: 1.2rem; margin-bottom: 0.6rem; font-weight: 700; }
+        .project-info p { font-size: 0.9rem; line-height: 1.4; opacity: 0.9; margin-bottom: 1rem; }
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.2rem; }
+        .tech-tags span { background: rgba(76, 140, 228, 0.15); border-radius: 20px; padding: 0.2rem 0.8rem; font-size: 0.7rem; color: #4C8CE4; }
         .project-btn {
             display: inline-flex;
             align-items: center;
@@ -345,16 +218,11 @@
             font-size: 0.8rem;
             font-weight: 500;
             text-decoration: none;
-            transition: all 0.25s ease;
+            transition: 0.25s ease;
             margin-top: auto;
             align-self: flex-start;
         }
-        .project-btn:hover {
-            background: #4C8CE4;
-            color: #05080f;
-            box-shadow: 0 0 10px rgba(76, 140, 228, 0.5);
-        }
-
+        .project-btn:hover { background: #4C8CE4; color: #05080f; box-shadow: 0 0 10px rgba(76, 140, 228, 0.5); }
         .startup-card {
             background: linear-gradient(135deg, #0a0f1c, #03060e);
             border-radius: 32px;
@@ -362,21 +230,8 @@
             border-left: 5px solid #4C8CE4;
             box-shadow: 0 15px 30px -10px rgba(0,0,0,0.5);
         }
-        .startup-card h3 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-            color: #FBF6F6;
-        }
-        .startup-badge {
-            display: inline-block;
-            background: rgba(76, 140, 228, 0.15);
-            padding: 0.2rem 1rem;
-            border-radius: 40px;
-            font-size: 0.8rem;
-            margin-bottom: 1.2rem;
-            color: #4C8CE4;
-        }
-
+        .startup-card h3 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .startup-badge { display: inline-block; background: rgba(76, 140, 228, 0.15); padding: 0.2rem 1rem; border-radius: 40px; font-size: 0.8rem; margin-bottom: 1.2rem; color: #4C8CE4; }
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -389,29 +244,12 @@
             padding: 1.8rem 1.5rem;
             text-align: center;
             border: 1px solid rgba(76, 140, 228, 0.3);
-            transition: all 0.3s ease;
+            transition: 0.3s ease;
         }
-        .contact-card:hover {
-            transform: translateY(-6px);
-            border-color: #4C8CE4;
-            box-shadow: 0 12px 24px -12px rgba(76, 140, 228, 0.2);
-        }
-        .contact-icon {
-            font-size: 2.5rem;
-            color: #4C8CE4;
-            margin-bottom: 1rem;
-        }
-        .contact-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-            color: #FBF6F6;
-        }
-        .contact-detail {
-            font-size: 0.95rem;
-            color: #FBF6F6;
-            margin-bottom: 1.2rem;
-            word-break: break-word;
-        }
+        .contact-card:hover { transform: translateY(-6px); border-color: #4C8CE4; }
+        .contact-icon { font-size: 2.5rem; color: #4C8CE4; margin-bottom: 1rem; }
+        .contact-card h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+        .contact-detail { font-size: 0.95rem; margin-bottom: 1.2rem; word-break: break-word; }
         .contact-btn {
             display: inline-flex;
             align-items: center;
@@ -424,24 +262,10 @@
             font-weight: 500;
             font-size: 0.9rem;
             text-decoration: none;
-            transition: all 0.25s ease;
+            transition: 0.25s ease;
         }
-        .contact-btn:hover {
-            background: #4C8CE4;
-            color: #05080f;
-            box-shadow: 0 0 12px rgba(76, 140, 228, 0.5);
-            transform: scale(1.02);
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            border-top: 1px solid rgba(76, 140, 228, 0.2);
-            font-size: 0.85rem;
-            color: #FBF6F6;
-            opacity: 0.8;
-        }
-
+        .contact-btn:hover { background: #4C8CE4; color: #05080f; box-shadow: 0 0 12px rgba(76, 140, 228, 0.5); transform: scale(1.02); }
+        footer { text-align: center; padding: 2rem; border-top: 1px solid rgba(76, 140, 228, 0.2); font-size: 0.85rem; opacity: 0.8; }
         @media (max-width: 768px) {
             .nav-container { flex-direction: column; }
             .nav-links { gap: 1.2rem; justify-content: center; }
@@ -522,86 +346,90 @@
         </div>
     </section>
 
-    <!-- Projects Section with all 8 projects (Footstep + 7 others) -->
     <section id="projects">
         <div class="container">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
-                <!-- 1. Footsteps Energy Generation System (with image and GitHub link) -->
+                <!-- 1. Footsteps Energy Generation System -->
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="footstep_project.jpg" alt="Footsteps Energy Generation System" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-walking\'></i>';">
+                        <img src="footstep_project.jpg" alt="Footsteps Energy Generation" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-walking\'></i>';">
                     </div>
                     <div class="project-info">
                         <h3>Footsteps Energy Generation System using Arduino</h3>
                         <p>Harvests energy from footsteps using 6 piezo sensors, charges a 3.7V Li-ion battery, displays voltage on LCD, and LED charging indicator. Simulated in Proteus.</p>
-                        <div class="tech-tags">
-                            <span>Arduino Nano</span><span>Piezo Sensor</span><span>Proteus</span><span>LCD 16x2</span><span>Energy Harvesting</span>
-                        </div>
+                        <div class="tech-tags"><span>Arduino Nano</span><span>Piezo Sensor</span><span>Proteus</span><span>LCD 16x2</span><span>Energy Harvesting</span></div>
                         <a href="https://github.com/SohelHossain1218/Footsteps-Energy-Generation-System" class="project-btn" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
                 <!-- 2. Industrial Pump Controller -->
                 <div class="project-card">
-                    <div class="project-img"><i class="fas fa-water-pump"></i></div>
+                    <div class="project-img"><img src="pump_controller.jpg" alt="Pump Controller" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-water-pump\'></i>';"></div>
                     <div class="project-info">
                         <h3>Industrial-Grade Multi-Function Pump Automation Controller</h3>
-                        <p>Advanced pump control with pressure regulation, flow monitoring, and fault detection.</p>
-                        <div class="tech-tags"><span>STM32</span><span>Industrial IoT</span></div>
+                        <p>Advanced pump control with pressure regulation, flow monitoring, and fault detection for heavy-duty industrial environments.</p>
+                        <div class="tech-tags"><span>STM32</span><span>Industrial IoT</span><span>Pressure Sensor</span></div>
+                        <a href="https://github.com/SohelHossain1218" class="project-btn" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
                 <!-- 3. 4G GPS Tracker -->
                 <div class="project-card">
-                    <div class="project-img"><i class="fas fa-satellite-dish"></i></div>
+                    <div class="project-img"><img src="gps_tracker.jpg" alt="GPS Tracker" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-satellite-dish\'></i>';"></div>
                     <div class="project-info">
                         <h3>4G-Enabled Smart GPS Tracking & Remote Monitoring System</h3>
-                        <p>Real-time asset tracking with 4G, geofencing, and cloud dashboard.</p>
-                        <div class="tech-tags"><span>ESP32</span><span>4G/LTE</span><span>GPS</span></div>
+                        <p>Real-time asset tracking with 4G connectivity, geofencing, and cloud-based dashboards for fleet management.</p>
+                        <div class="tech-tags"><span>ESP32</span><span>4G/LTE</span><span>GPS</span><span>Cloud</span></div>
+                        <a href="https://github.com/SohelHossain1218" class="project-btn" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
                 <!-- 4. ESP32 IoT Gateway -->
                 <div class="project-card">
-                    <div class="project-img"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <div class="project-img"><img src="iot_gateway.jpg" alt="IoT Gateway" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-cloud-upload-alt\'></i>';"></div>
                     <div class="project-info">
                         <h3>Scalable ESP32 Industrial IoT Gateway Solution</h3>
-                        <p>Modular IoT gateway with MQTT, OTA updates, edge processing.</p>
-                        <div class="tech-tags"><span>ESP32</span><span>MQTT</span><span>Node-RED</span></div>
+                        <p>Modular IoT gateway with MQTT, OTA updates, and edge processing for seamless factory data integration.</p>
+                        <div class="tech-tags"><span>ESP32</span><span>MQTT</span><span>Node-RED</span><span>Edge Computing</span></div>
+                        <a href="https://github.com/SohelHossain1218" class="project-btn" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
                 <!-- 5. Battery Management System -->
                 <div class="project-card">
-                    <div class="project-img"><i class="fas fa-battery-full"></i></div>
+                    <div class="project-img"><img src="bms.jpg" alt="Battery Management" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-battery-full\'></i>';"></div>
                     <div class="project-info">
                         <h3>High-Efficiency Lithium-Ion Battery Management System</h3>
-                        <p>BMS with cell balancing, overcurrent protection, CAN bus interface.</p>
-                        <div class="tech-tags"><span>BMS</span><span>CAN bus</span><span>Li-ion</span></div>
+                        <p>BMS with cell balancing, overcurrent protection, and CAN bus interface for electric vehicle and energy storage.</p>
+                        <div class="tech-tags"><span>BMS</span><span>CAN bus</span><span>Li-ion</span><span>Cell Balancing</span></div>
+                        <a href="https://github.com/SohelHossain1218" class="project-btn" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
                 <!-- 6. Energy Monitoring System -->
                 <div class="project-card">
-                    <div class="project-img"><i class="fas fa-charging-station"></i></div>
+                    <div class="project-img"><img src="energy_monitor.jpg" alt="Energy Monitor" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-charging-station\'></i>';"></div>
                     <div class="project-info">
                         <h3>Smart Energy Monitoring System with IoT Integration</h3>
-                        <p>Real-time power tracking, predictive analytics, remote control.</p>
-                        <div class="tech-tags"><span>ESP8266</span><span>IoT</span><span>Cloud</span></div>
+                        <p>Real-time power consumption tracking, predictive analytics, and remote control via web dashboard.</p>
+                        <div class="tech-tags"><span>ESP8266</span><span>IoT</span><span>Cloud</span><span>Analytics</span></div>
+                        <a href="https://github.com/SohelHossain1218" class="project-btn" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
                 <!-- 7. Modbus Tower Lamp Controller -->
                 <div class="project-card">
-                    <div class="project-img"><i class="fas fa-tower-cell"></i></div>
+                    <div class="project-img"><img src="tower_lamp.jpg" alt="Tower Lamp" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-tower-cell\'></i>';"></div>
                     <div class="project-info">
                         <h3>Modbus RTU-Based Intelligent Tower Lamp Controller</h3>
-                        <p>Industrial tower light controller with Modbus communication, status visualization.</p>
-                        <div class="tech-tags"><span>Modbus RTU</span><span>RS485</span></div>
+                        <p>Industrial tower light controller with Modbus communication, status visualization, and alarm management.</p>
+                        <div class="tech-tags"><span>Modbus RTU</span><span>RS485</span><span>Industrial Alarm</span></div>
+                        <a href="https://github.com/SohelHossain1218" class="project-btn" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
                 <!-- 8. Compact Automation Controller -->
                 <div class="project-card">
-                    <div class="project-img"><i class="fas fa-microchip"></i></div>
+                    <div class="project-img"><img src="compact_plc.jpg" alt="Compact Automation" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-microchip\'></i>';"></div>
                     <div class="project-info">
                         <h3>Compact Industrial Automation Controller for SMEs</h3>
-                        <p>Cost-effective PLC alternative with embedded HMI and expansion modules.</p>
-                        <div class="tech-tags"><span>Arduino</span><span>HMI</span><span>PLC alternative</span></div>
+                        <p>Cost-effective PLC alternative with embedded HMI and expansion modules tailored for small-scale industries.</p>
+                        <div class="tech-tags"><span>Arduino</span><span>HMI</span><span>PLC alternative</span><span>Modular</span></div>
+                        <a href="https://github.com/SohelHossain1218" class="project-btn" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
             </div>
@@ -615,12 +443,9 @@
                 <div class="startup-badge"><i class="fas fa-bolt"></i> Founded by Sohel Hossain</div>
                 <h3>Voltacdc <span style="color:#4C8CE4;">⚡</span></h3>
                 <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Industrial intelligence meets creative engineering.</strong></p>
-                <p>Voltacdc is a deep-tech startup focused on revolutionizing industrial automation, intelligent control systems, and embossing-integrated production lines. Our mission is to provide modular, cost-effective automation solutions for small and mid-sized factories.</p>
-                <p style="margin-top: 1rem;"><span class="highlight">Vision:</span> To become a global reference in adaptive automation, merging design aesthetics with robust industrial control.</p>
-                <div style="margin-top: 1.5rem;">
-                    <i class="fas fa-chart-line" style="color:#4C8CE4;"></i> 5+ industry prototypes &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <i class="fas fa-globe"></i> Partnering with engineering hubs
-                </div>
+                <p>Voltacdc is a deep-tech startup focused on revolutionizing industrial automation, intelligent control systems, and embossing-integrated production lines. Our mission is to provide modular, cost-effective automation solutions for small and mid-sized factories. We combine cutting-edge embedded platforms with AI-driven analytics to optimize energy consumption and workflow efficiency.</p>
+                <p style="margin-top: 1rem;"><span class="highlight">Vision:</span> To become a global reference in adaptive automation, merging design aesthetics with robust industrial control — empowering makers and manufacturers to build smarter, more sustainable systems.</p>
+                <div style="margin-top: 1.5rem;"><i class="fas fa-chart-line" style="color:#4C8CE4;"></i> 5+ industry prototypes &nbsp;&nbsp;|&nbsp;&nbsp; <i class="fas fa-globe"></i> Partnering with engineering hubs</div>
             </div>
         </div>
     </section>
