@@ -38,7 +38,6 @@
             scroll-behavior: smooth;
         }
 
-        /* header / navigation */
         .navbar {
             position: sticky;
             top: 0;
@@ -184,7 +183,6 @@
             padding-left: 1.2rem;
         }
 
-        /* About section with profile image */
         .about-wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -227,7 +225,6 @@
             box-shadow: 0 0 30px rgba(76, 140, 228, 0.5);
         }
 
-        /* Skills Grid */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -261,7 +258,6 @@
             background: rgba(10, 30, 50, 0.7);
         }
 
-        /* Projects grid */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -359,7 +355,6 @@
             box-shadow: 0 0 10px rgba(76, 140, 228, 0.5);
         }
 
-        /* startup section */
         .startup-card {
             background: linear-gradient(135deg, #0a0f1c, #03060e);
             border-radius: 32px;
@@ -381,11 +376,7 @@
             margin-bottom: 1.2rem;
             color: #4C8CE4;
         }
-        .startup-card p {
-            color: #FBF6F6;
-        }
 
-        /* contact section */
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -451,52 +442,22 @@
             opacity: 0.8;
         }
 
-        /* responsive */
         @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-            }
-            .nav-links {
-                gap: 1.2rem;
-                justify-content: center;
-            }
-            h1 {
-                font-size: 2.4rem;
-            }
-            h2 {
-                font-size: 1.8rem;
-            }
-            .container {
-                padding: 2.5rem 1.5rem;
-            }
-            .hero {
-                min-height: 70vh;
-            }
-            .about-wrapper {
-                flex-direction: column;
-                text-align: center;
-            }
-            .about-text {
-                order: 2;
-            }
-            .profile-image {
-                order: 1;
-            }
-            .skills-grid {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            }
-            .startup-card {
-                padding: 1.5rem;
-            }
+            .nav-container { flex-direction: column; }
+            .nav-links { gap: 1.2rem; justify-content: center; }
+            h1 { font-size: 2.4rem; }
+            h2 { font-size: 1.8rem; }
+            .container { padding: 2.5rem 1.5rem; }
+            .hero { min-height: 70vh; }
+            .about-wrapper { flex-direction: column; text-align: center; }
+            .about-text { order: 2; }
+            .profile-image { order: 1; }
+            .skills-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+            .startup-card { padding: 1.5rem; }
         }
-
         @media (max-width: 480px) {
-            .btn-primary {
-                padding: 0.6rem 1.5rem;
-            }
-            .hero-tagline {
-                font-size: 1rem;
-            }
+            .btn-primary { padding: 0.6rem 1.5rem; }
+            .hero-tagline { font-size: 1rem; }
         }
     </style>
 </head>
@@ -517,7 +478,6 @@
 </header>
 
 <main>
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -532,7 +492,6 @@
         </div>
     </section>
 
-    <!-- About Section with profile image -->
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
@@ -542,106 +501,106 @@
                     <p>As the founder of <strong class="highlight">Voltacdc</strong>, he is passionate about building innovative hardware and smart control systems that bridge the gap between creative embossing and industrial-grade reliability.</p>
                 </div>
                 <div class="profile-image">
-                    <img src="sohel.jpg" alt="Sohel Hossain - Embossed Designer & Automation Engineer">
+                    <img src="sohel.jpg" alt="Sohel Hossain">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <div class="container">
             <h2>Core Competencies</h2>
             <div class="skills-grid">
                 <div class="skill-card"><i class="fas fa-microchip"></i><h4>ESP32 Development</h4></div>
-                <div class="skill-card"><i class="fas fa-code"></i><h4>Arduino Programming (Arduino IDE)</h4></div>
+                <div class="skill-card"><i class="fas fa-code"></i><h4>Arduino Programming</h4></div>
                 <div class="skill-card"><i class="fas fa-brain"></i><h4>STM32 Development</h4></div>
-                <div class="skill-card"><i class="fas fa-calculator"></i><h4>PIC Microcontroller Systems</h4></div>
+                <div class="skill-card"><i class="fas fa-calculator"></i><h4>PIC Microcontroller</h4></div>
                 <div class="skill-card"><i class="fas fa-robot"></i><h4>Industrial Automation</h4></div>
-                <div class="skill-card"><i class="fas fa-microchip"></i><h4>Embedded Systems Design</h4></div>
-                <div class="skill-card"><i class="fas fa-pcb"></i><h4>PCB Design & Prototyping</h4></div>
+                <div class="skill-card"><i class="fas fa-microchip"></i><h4>Embedded Systems</h4></div>
+                <div class="skill-card"><i class="fas fa-pcb"></i><h4>PCB Design</h4></div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section (Updated with Image and Prompt) -->
+    <!-- Projects Section with all 8 projects (Footstep + 7 others) -->
     <section id="projects">
         <div class="container">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
-                <!-- Footsteps Energy Generation System - with image and button -->
+                <!-- 1. Footsteps Energy Generation System (with image and GitHub link) -->
                 <div class="project-card">
                     <div class="project-img">
-                        <!-- Replace 'footstep_project.jpg' with your actual image file name -->
-                        <img src="footstep_project.jpg" alt="Footsteps Energy Generation System Proteus Simulation" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-walking\'></i>';">
+                        <img src="footstep_project.jpg" alt="Footsteps Energy Generation System" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-walking\'></i>';">
                     </div>
                     <div class="project-info">
                         <h3>Footsteps Energy Generation System using Arduino</h3>
-                        <p>Harvests energy from footsteps using 6 piezo sensors, charges a 3.7V Li-ion battery, displays sensor & battery voltage on LCD, and LED charging indicator. Simulated in Proteus with custom piezo library.</p>
+                        <p>Harvests energy from footsteps using 6 piezo sensors, charges a 3.7V Li-ion battery, displays voltage on LCD, and LED charging indicator. Simulated in Proteus.</p>
                         <div class="tech-tags">
-                            <span>Arduino Nano</span>
-                            <span>Piezo Sensor</span>
-                            <span>Proteus</span>
-                            <span>LCD 16x2</span>
-                            <span>Energy Harvesting</span>
+                            <span>Arduino Nano</span><span>Piezo Sensor</span><span>Proteus</span><span>LCD 16x2</span><span>Energy Harvesting</span>
                         </div>
-                        <a href="https://github.com/SohelHossain1218/Footsteps-Energy-Generation-System" class="project-btn" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                        <a href="https://github.com/SohelHossain1218/footstep-energy" class="project-btn" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                     </div>
                 </div>
-                <!-- Other project cards remain same -->
+                <!-- 2. Industrial Pump Controller -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-water-pump"></i></div>
                     <div class="project-info">
                         <h3>Industrial-Grade Multi-Function Pump Automation Controller</h3>
-                        <p>Advanced pump control system with pressure regulation, flow monitoring, and fault detection for heavy-duty industrial environments.</p>
+                        <p>Advanced pump control with pressure regulation, flow monitoring, and fault detection.</p>
                         <div class="tech-tags"><span>STM32</span><span>Industrial IoT</span></div>
                     </div>
                 </div>
+                <!-- 3. 4G GPS Tracker -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-satellite-dish"></i></div>
                     <div class="project-info">
                         <h3>4G-Enabled Smart GPS Tracking & Remote Monitoring System</h3>
-                        <p>Real-time asset tracking with 4G connectivity, geofencing, and cloud-based dashboards for fleet management.</p>
+                        <p>Real-time asset tracking with 4G, geofencing, and cloud dashboard.</p>
                         <div class="tech-tags"><span>ESP32</span><span>4G/LTE</span><span>GPS</span></div>
                     </div>
                 </div>
+                <!-- 4. ESP32 IoT Gateway -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-cloud-upload-alt"></i></div>
                     <div class="project-info">
                         <h3>Scalable ESP32 Industrial IoT Gateway Solution</h3>
-                        <p>Modular IoT gateway with MQTT, OTA updates, and edge processing for seamless factory data integration.</p>
+                        <p>Modular IoT gateway with MQTT, OTA updates, edge processing.</p>
                         <div class="tech-tags"><span>ESP32</span><span>MQTT</span><span>Node-RED</span></div>
                     </div>
                 </div>
+                <!-- 5. Battery Management System -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-battery-full"></i></div>
                     <div class="project-info">
                         <h3>High-Efficiency Lithium-Ion Battery Management System</h3>
-                        <p>BMS with cell balancing, overcurrent protection, and CAN bus interface for electric vehicle and energy storage.</p>
+                        <p>BMS with cell balancing, overcurrent protection, CAN bus interface.</p>
                         <div class="tech-tags"><span>BMS</span><span>CAN bus</span><span>Li-ion</span></div>
                     </div>
                 </div>
+                <!-- 6. Energy Monitoring System -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-charging-station"></i></div>
                     <div class="project-info">
                         <h3>Smart Energy Monitoring System with IoT Integration</h3>
-                        <p>Real-time power consumption tracking, predictive analytics, and remote control via web dashboard.</p>
+                        <p>Real-time power tracking, predictive analytics, remote control.</p>
                         <div class="tech-tags"><span>ESP8266</span><span>IoT</span><span>Cloud</span></div>
                     </div>
                 </div>
+                <!-- 7. Modbus Tower Lamp Controller -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-tower-cell"></i></div>
                     <div class="project-info">
                         <h3>Modbus RTU-Based Intelligent Tower Lamp Controller</h3>
-                        <p>Industrial tower light controller with Modbus communication, status visualization, and alarm management.</p>
+                        <p>Industrial tower light controller with Modbus communication, status visualization.</p>
                         <div class="tech-tags"><span>Modbus RTU</span><span>RS485</span></div>
                     </div>
                 </div>
+                <!-- 8. Compact Automation Controller -->
                 <div class="project-card">
                     <div class="project-img"><i class="fas fa-microchip"></i></div>
                     <div class="project-info">
                         <h3>Compact Industrial Automation Controller for SMEs</h3>
-                        <p>Cost-effective PLC alternative with embedded HMI and expansion modules tailored for small-scale industries.</p>
+                        <p>Cost-effective PLC alternative with embedded HMI and expansion modules.</p>
                         <div class="tech-tags"><span>Arduino</span><span>HMI</span><span>PLC alternative</span></div>
                     </div>
                 </div>
@@ -649,7 +608,6 @@
         </div>
     </section>
 
-    <!-- Startup Section: Voltacdc -->
     <section id="startup">
         <div class="container">
             <h2>My Venture — Voltacdc</h2>
@@ -657,8 +615,8 @@
                 <div class="startup-badge"><i class="fas fa-bolt"></i> Founded by Sohel Hossain</div>
                 <h3>Voltacdc <span style="color:#4C8CE4;">⚡</span></h3>
                 <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Industrial intelligence meets creative engineering.</strong></p>
-                <p>Voltacdc is a deep-tech startup focused on revolutionizing industrial automation, intelligent control systems, and embossing-integrated production lines. Our mission is to provide modular, cost-effective automation solutions for small and mid-sized factories. We combine cutting-edge embedded platforms with AI-driven analytics to optimize energy consumption and workflow efficiency.</p>
-                <p style="margin-top: 1rem;"><span class="highlight">Vision:</span> To become a global reference in adaptive automation, merging design aesthetics with robust industrial control — empowering makers and manufacturers to build smarter, more sustainable systems.</p>
+                <p>Voltacdc is a deep-tech startup focused on revolutionizing industrial automation, intelligent control systems, and embossing-integrated production lines. Our mission is to provide modular, cost-effective automation solutions for small and mid-sized factories.</p>
+                <p style="margin-top: 1rem;"><span class="highlight">Vision:</span> To become a global reference in adaptive automation, merging design aesthetics with robust industrial control.</p>
                 <div style="margin-top: 1.5rem;">
                     <i class="fas fa-chart-line" style="color:#4C8CE4;"></i> 5+ industry prototypes &nbsp;&nbsp;|&nbsp;&nbsp;
                     <i class="fas fa-globe"></i> Partnering with engineering hubs
@@ -667,41 +625,15 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
             <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                    <h3>Email</h3>
-                    <div class="contact-detail">mdsohelhossain599@gmail.com</div>
-                    <a href="mailto:mdsohelhossain599@gmail.com" class="contact-btn" target="_blank"><i class="fas fa-paper-plane"></i> Send Email</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-                    <h3>WhatsApp</h3>
-                    <div class="contact-detail">+880 1994-159480</div>
-                    <a href="https://wa.link/o82q8y" class="contact-btn" target="_blank"><i class="fab fa-whatsapp"></i> Chat Now</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fab fa-facebook-f"></i></div>
-                    <h3>Facebook</h3>
-                    <div class="contact-detail">Sohel Hossain</div>
-                    <a href="https://web.facebook.com/Sohel1218" class="contact-btn" target="_blank"><i class="fab fa-facebook-f"></i> Visit Profile</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fab fa-github"></i></div>
-                    <h3>GitHub</h3>
-                    <div class="contact-detail">SohelHossain1218</div>
-                    <a href="https://github.com/SohelHossain1218" class="contact-btn" target="_blank"><i class="fab fa-github"></i> Explore Repos</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
-                    <h3>LinkedIn</h3>
-                    <div class="contact-detail">sohel1218</div>
-                    <a href="https://www.linkedin.com/in/sohel1218/" class="contact-btn" target="_blank"><i class="fab fa-linkedin-in"></i> Connect</a>
-                </div>
+                <div class="contact-card"><div class="contact-icon"><i class="fas fa-envelope"></i></div><h3>Email</h3><div class="contact-detail">mdsohelhossain599@gmail.com</div><a href="mailto:mdsohelhossain599@gmail.com" class="contact-btn" target="_blank"><i class="fas fa-paper-plane"></i> Send Email</a></div>
+                <div class="contact-card"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><h3>WhatsApp</h3><div class="contact-detail">+880 1994-159480</div><a href="https://wa.link/o82q8y" class="contact-btn" target="_blank"><i class="fab fa-whatsapp"></i> Chat Now</a></div>
+                <div class="contact-card"><div class="contact-icon"><i class="fab fa-facebook-f"></i></div><h3>Facebook</h3><div class="contact-detail">Sohel Hossain</div><a href="https://web.facebook.com/Sohel1218" class="contact-btn" target="_blank"><i class="fab fa-facebook-f"></i> Visit Profile</a></div>
+                <div class="contact-card"><div class="contact-icon"><i class="fab fa-github"></i></div><h3>GitHub</h3><div class="contact-detail">SohelHossain1218</div><a href="https://github.com/SohelHossain1218" class="contact-btn" target="_blank"><i class="fab fa-github"></i> Explore Repos</a></div>
+                <div class="contact-card"><div class="contact-icon"><i class="fab fa-linkedin-in"></i></div><h3>LinkedIn</h3><div class="contact-detail">sohel1218</div><a href="https://www.linkedin.com/in/sohel1218/" class="contact-btn" target="_blank"><i class="fab fa-linkedin-in"></i> Connect</a></div>
             </div>
         </div>
     </section>
@@ -713,8 +645,6 @@
 
 <script>
     document.getElementById('currentYear').innerText = new Date().getFullYear();
-
-    // Active nav highlight on scroll
     const sections = document.querySelectorAll("section[id]");
     const navLinks = document.querySelectorAll(".nav-links a");
     function updateActiveNav() {
@@ -737,8 +667,6 @@
     }
     window.addEventListener("scroll", updateActiveNav);
     updateActiveNav();
-
-    // Smooth scroll for contact button
     const contactBtn = document.querySelector('.btn-primary');
     if(contactBtn) {
         contactBtn.addEventListener('click', (e) => {
